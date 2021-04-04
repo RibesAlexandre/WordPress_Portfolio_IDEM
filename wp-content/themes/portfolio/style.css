@@ -1,0 +1,19 @@
+/*
+Theme Name: Portfolio
+Text Domain: portfolio
+Version: 1.0
+Requires at least: 5.7
+Requires PHP: 7.2
+Description: Template de mon portfolio
+Author: Alexandre Ribes
+Author URI: https://alexandre-ribes.fr
+*/
+
+body {
+    padding-top: 56px;
+}
+
+
+.navbar img {
+    max-height: 70px;
+}
