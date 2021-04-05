@@ -9,13 +9,13 @@ add_action('after_setup_theme', function() {
     add_theme_support('title-tag');
     add_theme_support('menus');
     add_theme_support('html5');
-    add_theme_support('post-thumbnail');
+    add_theme_support('post-thumbnails');
 });
 
 /**
  * Support des fichiers SVG
  */
-add_filter('upload_mimes', function($mimes) {
-    $mimes['svg'] = 'img/svg+xml';
+add_filter('upload_mimes', function ($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
     return $mimes;
 });

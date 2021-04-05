@@ -2,7 +2,7 @@
 Theme Name: Portfolio
 Text Domain: portfolio
 Version: 1.0
-Requires at least: 5.7
+Requires at least: 5.4
 Requires PHP: 7.2
 Description: Template de mon portfolio
 Author: Alexandre Ribes
@@ -13,7 +13,59 @@ body {
     padding-top: 56px;
 }
 
+a {
+    transition: 0.5s;
+}
 
 .navbar img {
     max-height: 70px;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer ul li .nav-link {
+    padding: 0;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
 }

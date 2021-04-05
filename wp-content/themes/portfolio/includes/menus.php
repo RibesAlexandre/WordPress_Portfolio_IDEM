@@ -25,3 +25,20 @@ add_filter('nav_menu_link_attributes', function ($attrs) {
     $attrs['class'] = 'nav-link';
     return $attrs;
 });
+
+require_once('widgets/social.php');
+
+add_action('widgets_init', function() {
+    register_widget(Portfolio_Social_Widget::class);
+
+    register_sidebar([
+        'id'                =>  'footer',
+        'name'              =>  __('Footer', 'portfolio'),
+        'before_title'      =>  '<h5>',
+        'after_title'       =>  '</h5>',
+        'before_widget'     =>  '<div class="col-4 col-md">',
+        'after_widget'      =>  '</div>',
+    ]);
+
+});
+
